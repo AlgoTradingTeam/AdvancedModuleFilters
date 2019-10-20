@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\zuzuka\AppData\Local\TSLab\TSLab 2.0\Handlers\AdvancedModuleFilters.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81853F80-4C4B-4EBD-B51E-B10F6A2D14F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AdvancedModuleFilters</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>TSLab.AdvancedModuleFilters</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TSLab.Script" />
+    <Reference Include="System" />
+    <Reference Include="TSLab.DataSource" />
+    <Reference Include="TSLab.Script.Handlers" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvFazyRynkaSwitch.cs" />
+    <Compile Include="AdvFazyRynkaThree.cs" />
+    <Compile Include="AdvFazyRynkaTwo.cs" />
+    <Compile Include="AdvFazyRynka2.cs" />
+    <Compile Include="AdvFazyRynkaYedinyy.cs" />
+    <Compile Include="AdvKoefKorrYedinyy.cs" />
+    <Compile Include="AdvKoefKorrTwo.cs" />
+    <Compile Include="AdvKoefKorrPoFazam.cs" />
+    <Compile Include="AdvOprimAMA.cs" />
+    <Compile Include="AdvRazmerGO.cs" />
+    <Compile Include="AdvOprimTBX.cs" />
+    <Compile Include="TypeShadow.cs" />
+    <Compile Include="TypeСomparison.cs" />
+    <Compile Include="TypeMathResult.cs" />
+    <Compile Include="TypeCandles.cs" />
+    <Compile Include="AdvFilterParabolSAR.cs" />
+    <Compile Include="AdvFilterPrevADX.cs" />
+    <Compile Include="AdvFilterADX2.cs" />
+    <Compile Include="AdvFazyRynka.cs" />
+    <Compile Include="AdvFilterRSI2.cs" />
+    <Compile Include="AdvFilterVOL.cs" />
+    <Compile Include="AdvFilterTRIX.cs" />
+    <Compile Include="AdvFilterStohRSI.cs" />
+    <Compile Include="AdvFilterRSI.cs" />
+    <Compile Include="AdvFilterPrevVOL.cs" />
+    <Compile Include="AdvFilterPrevTRIX.cs" />
+    <Compile Include="AdvFilterPrevMACD.cs" />
+    <Compile Include="AdvFilterPrevCCI.cs" />
+    <Compile Include="AdvFilterPrevATR.cs" />
+    <Compile Include="AdvFilterMACD.cs" />
+    <Compile Include="AdvFilterCCI.cs" />
+    <Compile Include="AdvFilterADX.cs" />
+    <Compile Include="AdvKoefKorr.cs" />
+    <Compile Include="AdvOprimYear.cs" />
+    <Compile Include="AdvScriptSwitch.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
