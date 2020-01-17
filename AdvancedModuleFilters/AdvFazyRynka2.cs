@@ -58,9 +58,9 @@ namespace TSLab.AdvancedModuleFilters
     public IList<bool> Execute(ISecurity source)
     {
       ISecurity dailySec = source.CompressTo(Interval.D1, 0, 1440, 600);
-      IList<double> highPrices = dailySec.HighPrices;
-      IList<double> lowPrices = dailySec.LowPrices;
-      IList<double> closePrices = dailySec.ClosePrices;
+      IList<double> highPrices = dailySec.GetHighPrices(this.Context);
+      IList<double> lowPrices = dailySec.GetLowPrices(this.Context);
+      IList<double> closePrices = dailySec.GetClosePrices(this.Context);
       int count1 = source.Bars.Count;
       int count2 = dailySec.Bars.Count;
       IList<double> doubleList1 = (IList<double>) new double[count2];

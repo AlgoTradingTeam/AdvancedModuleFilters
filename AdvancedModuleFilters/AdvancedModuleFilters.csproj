@@ -32,10 +32,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="TSLab.Script" />
+    <Reference Include="TSLab.Script">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\TSLab 2.0\TSLab.Script.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="TSLab.DataSource" />
-    <Reference Include="TSLab.Script.Handlers" />
+    <Reference Include="TSLab.DataSource">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\TSLab 2.0\TSLab.DataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="TSLab.Script.Handlers">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\TSLab 2.0\TSLab.Script.Handlers.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdvFazyRynkaSwitch.cs" />
